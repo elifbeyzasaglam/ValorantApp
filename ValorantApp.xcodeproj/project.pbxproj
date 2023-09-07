@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3B6D2572AA9B11600E121D7 /* Endpointable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2562AA9B11600E121D7 /* Endpointable.swift */; };
+		E3B6D2592AA9B1AF00E121D7 /* Parameterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2582AA9B1AF00E121D7 /* Parameterable.swift */; };
+		E3B6D25B2AA9B24700E121D7 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D25A2AA9B24700E121D7 /* Networkable.swift */; };
+		E3B6D25F2AA9B5C600E121D7 /* MainEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D25E2AA9B5C600E121D7 /* MainEndpoint.swift */; };
+		E3B6D2612AA9B6CF00E121D7 /* MainParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2602AA9B6CF00E121D7 /* MainParameter.swift */; };
+		E3B6D2672AA9B7A600E121D7 /* URLSessionServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2662AA9B7A600E121D7 /* URLSessionServiceManager.swift */; };
 		E3ECC1B02AA9AE490046B11A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC1AF2AA9AE490046B11A /* AppDelegate.swift */; };
 		E3ECC1B22AA9AE490046B11A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */; };
 		E3ECC1B42AA9AE490046B11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC1B32AA9AE490046B11A /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3B6D2562AA9B11600E121D7 /* Endpointable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpointable.swift; sourceTree = "<group>"; };
+		E3B6D2582AA9B1AF00E121D7 /* Parameterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameterable.swift; sourceTree = "<group>"; };
+		E3B6D25A2AA9B24700E121D7 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		E3B6D25E2AA9B5C600E121D7 /* MainEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEndpoint.swift; sourceTree = "<group>"; };
+		E3B6D2602AA9B6CF00E121D7 /* MainParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParameter.swift; sourceTree = "<group>"; };
+		E3B6D2662AA9B7A600E121D7 /* URLSessionServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionServiceManager.swift; sourceTree = "<group>"; };
 		E3ECC1AC2AA9AE490046B11A /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3ECC1AF2AA9AE490046B11A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3B6D25C2AA9B59400E121D7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D2562AA9B11600E121D7 /* Endpointable.swift */,
+				E3B6D2582AA9B1AF00E121D7 /* Parameterable.swift */,
+				E3B6D25A2AA9B24700E121D7 /* Networkable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E3B6D25D2AA9B59E00E121D7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D25C2AA9B59400E121D7 /* Protocols */,
+				E3B6D2632AA9B75700E121D7 /* Endpoints */,
+				E3B6D2642AA9B75F00E121D7 /* Parameters */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E3B6D2622AA9B75100E121D7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D25E2AA9B5C600E121D7 /* MainEndpoint.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E3B6D2632AA9B75700E121D7 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D2622AA9B75100E121D7 /* Main */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		E3B6D2642AA9B75F00E121D7 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D2652AA9B76600E121D7 /* Main */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		E3B6D2652AA9B76600E121D7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D2602AA9B6CF00E121D7 /* MainParameter.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		E3ECC1A32AA9AE490046B11A = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +123,8 @@
 				E3ECC1AF2AA9AE490046B11A /* AppDelegate.swift */,
 				E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */,
 				E3ECC1B32AA9AE490046B11A /* ViewController.swift */,
+				E3B6D2662AA9B7A600E121D7 /* URLSessionServiceManager.swift */,
+				E3B6D25D2AA9B59E00E121D7 /* Network */,
 				E3ECC1B52AA9AE490046B11A /* Main.storyboard */,
 				E3ECC1B82AA9AE4A0046B11A /* Assets.xcassets */,
 				E3ECC1BA2AA9AE4A0046B11A /* LaunchScreen.storyboard */,
@@ -139,7 +205,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3ECC1B42AA9AE490046B11A /* ViewController.swift in Sources */,
+				E3B6D2592AA9B1AF00E121D7 /* Parameterable.swift in Sources */,
 				E3ECC1B02AA9AE490046B11A /* AppDelegate.swift in Sources */,
+				E3B6D2572AA9B11600E121D7 /* Endpointable.swift in Sources */,
+				E3B6D2612AA9B6CF00E121D7 /* MainParameter.swift in Sources */,
+				E3B6D25B2AA9B24700E121D7 /* Networkable.swift in Sources */,
+				E3B6D25F2AA9B5C600E121D7 /* MainEndpoint.swift in Sources */,
+				E3B6D2672AA9B7A600E121D7 /* URLSessionServiceManager.swift in Sources */,
 				E3ECC1B22AA9AE490046B11A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
