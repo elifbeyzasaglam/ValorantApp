@@ -19,6 +19,9 @@
 		E3ECC1B22AA9AE490046B11A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */; };
 		E3ECC1B92AA9AE4A0046B11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC1B82AA9AE4A0046B11A /* Assets.xcassets */; };
 		E3ECC1BC2AA9AE4A0046B11A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC1BA2AA9AE4A0046B11A /* LaunchScreen.storyboard */; };
+		E3F8BC882AA9C4DB00B81FDA /* MainDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8BC872AA9C4DB00B81FDA /* MainDataProviderProtocol.swift */; };
+		E3F8BC8A2AA9C60A00B81FDA /* AgentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8BC892AA9C60A00B81FDA /* AgentResponse.swift */; };
+		E3F8BC8C2AA9C80E00B81FDA /* MainDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8BC8B2AA9C80E00B81FDA /* MainDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		E3ECC1B82AA9AE4A0046B11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3ECC1BB2AA9AE4A0046B11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3ECC1BD2AA9AE4A0046B11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F8BC872AA9C4DB00B81FDA /* MainDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataProviderProtocol.swift; sourceTree = "<group>"; };
+		E3F8BC892AA9C60A00B81FDA /* AgentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentResponse.swift; sourceTree = "<group>"; };
+		E3F8BC8B2AA9C80E00B81FDA /* MainDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +99,7 @@
 		E37203722AA9BF0600E3B216 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E37203732AA9BF0D00E3B216 /* View */,
+				E3F8BC902AA9CA3000B81FDA /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -189,6 +195,41 @@
 			path = ValorantApp;
 			sourceTree = "<group>";
 		};
+		E3F8BC8D2AA9CA0700B81FDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3F8BC892AA9C60A00B81FDA /* AgentResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3F8BC8E2AA9CA0E00B81FDA /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E3F8BC8B2AA9C80E00B81FDA /* MainDataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		E3F8BC8F2AA9CA2300B81FDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E3F8BC872AA9C4DB00B81FDA /* MainDataProviderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E3F8BC902AA9CA3000B81FDA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E37203732AA9BF0D00E3B216 /* View */,
+				E3F8BC8F2AA9CA2300B81FDA /* Protocols */,
+				E3F8BC8E2AA9CA0E00B81FDA /* DataProvider */,
+				E3F8BC8D2AA9CA0700B81FDA /* Models */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F8BC8A2AA9C60A00B81FDA /* AgentResponse.swift in Sources */,
 				E3B6D2592AA9B1AF00E121D7 /* Parameterable.swift in Sources */,
 				E3ECC1B02AA9AE490046B11A /* AppDelegate.swift in Sources */,
 				E3B6D2572AA9B11600E121D7 /* Endpointable.swift in Sources */,
@@ -269,6 +311,8 @@
 				E37203702AA9BF0000E3B216 /* MainViewController.swift in Sources */,
 				E3B6D2672AA9B7A600E121D7 /* URLSessionServiceManager.swift in Sources */,
 				E3ECC1B22AA9AE490046B11A /* SceneDelegate.swift in Sources */,
+				E3F8BC882AA9C4DB00B81FDA /* MainDataProviderProtocol.swift in Sources */,
+				E3F8BC8C2AA9C80E00B81FDA /* MainDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
