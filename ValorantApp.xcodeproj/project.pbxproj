@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E37203702AA9BF0000E3B216 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372036E2AA9BF0000E3B216 /* MainViewController.swift */; };
+		E37203712AA9BF0000E3B216 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E372036F2AA9BF0000E3B216 /* MainViewController.xib */; };
 		E3B6D2572AA9B11600E121D7 /* Endpointable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2562AA9B11600E121D7 /* Endpointable.swift */; };
 		E3B6D2592AA9B1AF00E121D7 /* Parameterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2582AA9B1AF00E121D7 /* Parameterable.swift */; };
 		E3B6D25B2AA9B24700E121D7 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D25A2AA9B24700E121D7 /* Networkable.swift */; };
@@ -15,13 +17,13 @@
 		E3B6D2672AA9B7A600E121D7 /* URLSessionServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2662AA9B7A600E121D7 /* URLSessionServiceManager.swift */; };
 		E3ECC1B02AA9AE490046B11A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC1AF2AA9AE490046B11A /* AppDelegate.swift */; };
 		E3ECC1B22AA9AE490046B11A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */; };
-		E3ECC1B42AA9AE490046B11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC1B32AA9AE490046B11A /* ViewController.swift */; };
-		E3ECC1B72AA9AE490046B11A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC1B52AA9AE490046B11A /* Main.storyboard */; };
 		E3ECC1B92AA9AE4A0046B11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC1B82AA9AE4A0046B11A /* Assets.xcassets */; };
 		E3ECC1BC2AA9AE4A0046B11A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC1BA2AA9AE4A0046B11A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E372036E2AA9BF0000E3B216 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E372036F2AA9BF0000E3B216 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		E3B6D2562AA9B11600E121D7 /* Endpointable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpointable.swift; sourceTree = "<group>"; };
 		E3B6D2582AA9B1AF00E121D7 /* Parameterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameterable.swift; sourceTree = "<group>"; };
 		E3B6D25A2AA9B24700E121D7 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		E3ECC1AC2AA9AE490046B11A /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3ECC1AF2AA9AE490046B11A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3ECC1B32AA9AE490046B11A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3ECC1B62AA9AE490046B11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3ECC1B82AA9AE4A0046B11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3ECC1BB2AA9AE4A0046B11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3ECC1BD2AA9AE4A0046B11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E37203692AA9BE5100E3B216 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E3ECC1AF2AA9AE490046B11A /* AppDelegate.swift */,
+				E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		E372036A2AA9BE7000E3B216 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3ECC1B82AA9AE4A0046B11A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E372036B2AA9BE7700E3B216 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E3ECC1BA2AA9AE4A0046B11A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E372036C2AA9BE8500E3B216 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				E3ECC1BD2AA9AE4A0046B11A /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		E372036D2AA9BEE400E3B216 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D2662AA9B7A600E121D7 /* URLSessionServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		E37203722AA9BF0600E3B216 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E37203732AA9BF0D00E3B216 /* View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E37203732AA9BF0D00E3B216 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E372036E2AA9BF0000E3B216 /* MainViewController.swift */,
+				E372036F2AA9BF0000E3B216 /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E3B6D25C2AA9B59400E121D7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +178,13 @@
 		E3ECC1AE2AA9AE490046B11A /* ValorantApp */ = {
 			isa = PBXGroup;
 			children = (
-				E3ECC1AF2AA9AE490046B11A /* AppDelegate.swift */,
-				E3ECC1B12AA9AE490046B11A /* SceneDelegate.swift */,
-				E3ECC1B32AA9AE490046B11A /* ViewController.swift */,
-				E3B6D2662AA9B7A600E121D7 /* URLSessionServiceManager.swift */,
+				E37203692AA9BE5100E3B216 /* Delegates */,
+				E372036D2AA9BEE400E3B216 /* ServiceManager */,
 				E3B6D25D2AA9B59E00E121D7 /* Network */,
-				E3ECC1B52AA9AE490046B11A /* Main.storyboard */,
-				E3ECC1B82AA9AE4A0046B11A /* Assets.xcassets */,
-				E3ECC1BA2AA9AE4A0046B11A /* LaunchScreen.storyboard */,
-				E3ECC1BD2AA9AE4A0046B11A /* Info.plist */,
+				E372036A2AA9BE7000E3B216 /* Resources */,
+				E372036B2AA9BE7700E3B216 /* Storyboards */,
+				E372036C2AA9BE8500E3B216 /* Supports */,
+				E37203722AA9BF0600E3B216 /* Modules */,
 			);
 			path = ValorantApp;
 			sourceTree = "<group>";
@@ -192,8 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3ECC1BC2AA9AE4A0046B11A /* LaunchScreen.storyboard in Resources */,
+				E37203712AA9BF0000E3B216 /* MainViewController.xib in Resources */,
 				E3ECC1B92AA9AE4A0046B11A /* Assets.xcassets in Resources */,
-				E3ECC1B72AA9AE490046B11A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,13 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3ECC1B42AA9AE490046B11A /* ViewController.swift in Sources */,
 				E3B6D2592AA9B1AF00E121D7 /* Parameterable.swift in Sources */,
 				E3ECC1B02AA9AE490046B11A /* AppDelegate.swift in Sources */,
 				E3B6D2572AA9B11600E121D7 /* Endpointable.swift in Sources */,
 				E3B6D2612AA9B6CF00E121D7 /* MainParameter.swift in Sources */,
 				E3B6D25B2AA9B24700E121D7 /* Networkable.swift in Sources */,
 				E3B6D25F2AA9B5C600E121D7 /* MainEndpoint.swift in Sources */,
+				E37203702AA9BF0000E3B216 /* MainViewController.swift in Sources */,
 				E3B6D2672AA9B7A600E121D7 /* URLSessionServiceManager.swift in Sources */,
 				E3ECC1B22AA9AE490046B11A /* SceneDelegate.swift in Sources */,
 			);
@@ -219,14 +275,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E3ECC1B52AA9AE490046B11A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3ECC1B62AA9AE490046B11A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3ECC1BA2AA9AE4A0046B11A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,10 +409,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FB7Y8XZHL8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ValorantApp/Info.plist;
+				INFOPLIST_FILE = ValorantApp/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,10 +436,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FB7Y8XZHL8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ValorantApp/Info.plist;
+				INFOPLIST_FILE = ValorantApp/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
