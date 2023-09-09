@@ -7,11 +7,38 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
+    
+    @IBOutlet private weak var mainTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        registerCells()
+    }
+    
+    private func setupTableView() {
+        mainTableView.dataSource = self
+    }
+    
+    private func registerCells() {
 
-        // Do any additional setup after loading the view.
+    }
+    
+}
+
+extension MainViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
+
+
