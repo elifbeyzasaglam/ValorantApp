@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E353A8832AAC935B00E30031 /* MainViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353A8822AAC935B00E30031 /* MainViewModelProtocol.swift */; };
+		E353A88D2AAC9F9800E30031 /* MainCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353A88C2AAC9F9800E30031 /* MainCellType.swift */; };
+		E353A8902AACA0AC00E30031 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353A88F2AACA0AC00E30031 /* MainViewModel.swift */; };
 		E37203702AA9BF0000E3B216 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372036E2AA9BF0000E3B216 /* MainViewController.swift */; };
 		E37203712AA9BF0000E3B216 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E372036F2AA9BF0000E3B216 /* MainViewController.xib */; };
 		E3B6D2572AA9B11600E121D7 /* Endpointable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D2562AA9B11600E121D7 /* Endpointable.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E353A8822AAC935B00E30031 /* MainViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelProtocol.swift; sourceTree = "<group>"; };
+		E353A88C2AAC9F9800E30031 /* MainCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellType.swift; sourceTree = "<group>"; };
+		E353A88F2AACA0AC00E30031 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E372036E2AA9BF0000E3B216 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E372036F2AA9BF0000E3B216 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		E3B6D2562AA9B11600E121D7 /* Endpointable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpointable.swift; sourceTree = "<group>"; };
@@ -55,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E353A88E2AACA09A00E30031 /* CellType */ = {
+			isa = PBXGroup;
+			children = (
+				E353A88C2AAC9F9800E30031 /* MainCellType.swift */,
+			);
+			path = CellType;
+			sourceTree = "<group>";
+		};
+		E353A8912AACA21200E30031 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E353A88F2AACA0AC00E30031 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E37203692AA9BE5100E3B216 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +236,7 @@
 		E3F8BC8F2AA9CA2300B81FDA /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E353A8822AAC935B00E30031 /* MainViewModelProtocol.swift */,
 				E3F8BC872AA9C4DB00B81FDA /* MainDataProviderProtocol.swift */,
 			);
 			path = Protocols;
@@ -226,6 +249,8 @@
 				E3F8BC8F2AA9CA2300B81FDA /* Protocols */,
 				E3F8BC8E2AA9CA0E00B81FDA /* DataProvider */,
 				E3F8BC8D2AA9CA0700B81FDA /* Models */,
+				E353A88E2AACA09A00E30031 /* CellType */,
+				E353A8912AACA21200E30031 /* ViewModel */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -304,7 +329,10 @@
 				E3F8BC8A2AA9C60A00B81FDA /* AgentResponse.swift in Sources */,
 				E3B6D2592AA9B1AF00E121D7 /* Parameterable.swift in Sources */,
 				E3ECC1B02AA9AE490046B11A /* AppDelegate.swift in Sources */,
+				E353A88D2AAC9F9800E30031 /* MainCellType.swift in Sources */,
 				E3B6D2572AA9B11600E121D7 /* Endpointable.swift in Sources */,
+				E353A8902AACA0AC00E30031 /* MainViewModel.swift in Sources */,
+				E353A8832AAC935B00E30031 /* MainViewModelProtocol.swift in Sources */,
 				E3B6D2612AA9B6CF00E121D7 /* MainParameter.swift in Sources */,
 				E3B6D25B2AA9B24700E121D7 /* Networkable.swift in Sources */,
 				E3B6D25F2AA9B5C600E121D7 /* MainEndpoint.swift in Sources */,
