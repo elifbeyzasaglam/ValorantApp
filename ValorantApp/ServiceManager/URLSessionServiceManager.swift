@@ -42,8 +42,7 @@ final class URLSessionServiceManager: Networkable {
             } catch {
                 completion(.failure(error))
             }
-            
         }
-        
+        .resume()
     }
 }
