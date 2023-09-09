@@ -10,6 +10,7 @@ import Foundation
 enum MainEndpoint: Endpointable {
     
     case agents
+    case buddies
     
     var baseURL: String {
         return "https://valorant-api.com/v1"
@@ -17,12 +18,12 @@ enum MainEndpoint: Endpointable {
     
     var fullPath: String {
         return baseURL + self.rawValue
-        //https://valorant-api.com/v1/agentss
     }
     
     var rawValue: String {
         switch self {
         case .agents: return "/agents"
+        case .buddies: return "/buddies"
         }
     }
 }
